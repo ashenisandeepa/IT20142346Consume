@@ -15,9 +15,9 @@ import javax.servlet.http.HttpServletResponse;
 
  
 /**
- * Servlet implementation class paymentAPI
+ * Servlet implementation class consAPI
  */
-@WebServlet("/paymentAPI")
+@WebServlet("/consAPI")
 public class consAPI extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
@@ -57,7 +57,7 @@ public class consAPI extends HttpServlet {
 	 */
 	protected void doPut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		Map paras = getParasMap(request); 
-		String output = itemObj.updateItem(paras.get("hidpaymentIDSave").toString(), 
+		String output = itemObj.updateItem(paras.get("hidcidSave").toString(), 
 		paras.get("name").toString(), 
 		paras.get("address").toString(), 
 		paras.get("phone").toString(),

@@ -21,7 +21,7 @@ if (status != true)
  return; 
  } 
 // If valid------------------------
-var type = ($("#hidpaymentIDSave").val() == "") ? "POST" : "PUT"; 
+var type = ($("#hidcidSave").val() == "") ? "POST" : "PUT"; 
  $.ajax( 
  { 
  url : "consAPI", 
@@ -62,14 +62,14 @@ if (status == "success")
  $("#alertError").show(); 
  } 
 
- $("#hidpaymentIDSave").val(""); 
+ $("#hidcidSave").val(""); 
  $("#formItem")[0].reset(); 
 }  
 
 // UPDATE==========================================
 $(document).on("click", ".btnUpdate", function(event) 
 { 
-$("#hidpaymentIDSave").val($(this).data("CID")); 
+$("#hidcidSave").val($(this).data("cid")); 
  $("#name").val($(this).closest("tr").find('td:eq(0)').text()); 
  $("#address").val($(this).closest("tr").find('td:eq(1)').text()); 
  $("#phone").val($(this).closest("tr").find('td:eq(2)').text()); 
@@ -83,7 +83,7 @@ $("#hidpaymentIDSave").val($(this).data("CID"));
  { 
  url : "consAPI", 
  type : "DELETE", 
- data : "cid=" + $(this).data("CID"),
+ data : "cid=" + $(this).data("cid"),
  dataType : "text", 
  complete : function(response, status) 
  { 

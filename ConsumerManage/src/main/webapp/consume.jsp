@@ -40,7 +40,7 @@
  class="form-control form-control-sm">
  <br>
  <input id="btnSave" name="btnSave" type="button" value="Save" class="btn btn-primary">
- <input type="hidden" id="hidpaymentIDSave"name="hidpaymentIDSave" value="">
+ <input type="hidden" id="hidcidSave"name="hidcidSave" value="">
 </form>
  
 <br>

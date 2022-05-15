@@ -86,15 +86,15 @@ public class cons {
 	 String email = rs.getString("email");
 	 String description = rs.getString("description");
 	 
-	 output += "<tr><td><input id='hidpaymentIDUpdate' name='hidpaymentIDUpdate' type='hidden' value='" + cid + "'>"
+	 output += "<tr><td><input id='hidcidUpdate' name='hidcidUpdate' type='hidden' value='" + cid + "'>"
 			 + name + "</td>"; 
 			 output += "<td>" + address + "</td>"; 
 			 output += "<td>" + phone + "</td>"; 
 			 output += "<td>" + email + "</td>"; 
 			 output += "<td>" + description + "</td>";
 			 // buttons
-	 output += "<td><input name='btnUpdate'type='button' value='Update'class='btnUpdate btn btn-warning' data-CID='"+cid+"'>"
-			 + "<td><input name='.btnRemove' type='button' value='Remove' class='btnRemove btn btn-danger' data-CID='"+cid+"'>" + "</td></tr>";
+	 output += "<td><input name='btnUpdate'type='button' value='Update'class='btnUpdate btn btn-warning' data-cid='"+cid+"'>"
+			 + "<td><input name='btnRemove' type='button' value='Remove' class='btnRemove btn btn-danger' data-cid='"+cid+"'>" + "</td></tr>";
 			 } 
 	 con.close(); 
 	 // Complete the 
